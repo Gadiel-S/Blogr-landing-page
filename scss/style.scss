@@ -1,0 +1,271 @@
+// - Mobile: 375px
+// - Desktop: 1440px
+// - Font size: 16px
+
+$red-primary: hsl(356, 100%, 66%);
+$light-red-primary: hsl(355, 100%, 74%);
+$blue-primary: hsl(208, 49%, 24%);
+
+$white: hsl(0, 0%, 100%);
+$blue-neutral: hsl(240, 2%, 79%);
+$grayish-blue-neutral: hsl(207, 13%, 34%);
+$black-blue-neutral: hsl(240, 10%, 16%);
+
+$red-gradient: hsl(353, 100%, 62%);
+$light-red-gradient: hsl(13, 100%, 72%);
+$blue-gradient: hsl(237, 23%, 32%);
+$gray-blue-gradient: hsl(237, 17%, 21%);
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Overpass', sans-serif;
+}
+.logo {
+    width: 9rem;
+}
+.hidden {
+    display: none !important;
+}
+.arrow {
+    transition: 0.2s ease-in-out;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+header {
+    background-image: linear-gradient(0deg, rgba(255,61,84,1) 0%, rgba(255,143,112,1) 100%);
+    overflow: hidden;
+    border-bottom-left-radius: 10rem;
+    .gradient-header {
+        background: url("../images/bg-pattern-intro-mobile.svg") -34rem -26rem;
+        padding-bottom: 15rem;
+    }
+    .hamburger {
+        width: 3rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 6rem 2rem 0;
+    }
+    .mobile-menu {
+        position: absolute;
+        top: 12rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 33rem;
+        padding: 3rem 0;
+        border-radius: 5px;
+    }
+    .header-links {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding-bottom: 2rem;
+        width: 29rem;
+        border-bottom: 1px solid darken($white, 10);
+    }
+    .info-title {
+        border: none;
+        background: none;
+        font-size: 1.6rem;
+        color: $blue-primary;
+        font-weight: 600;
+    }
+    .info {
+        background-color: darken($white, 7);
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+        margin-top: 2rem;
+        gap: 1.5rem;
+        font-weight: 600;
+        border-radius: 4px;
+        a {
+            color: transparentize($grayish-blue-neutral, .2);
+            &:hover {
+                color: $black-blue-neutral;
+            }
+        }
+    }
+    .menu-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .login {
+        color: $blue-primary;
+        border: none;
+        background: none;
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        border-radius: 10rem;
+    }
+    .signup {
+        background: linear-gradient(270deg, rgba(255,61,84,1) 0%, rgba(255,143,112,1) 100%);
+        border: none;
+        color: $white;
+        padding: 1.2rem 3.5rem;
+        border-radius: 10rem;
+        font-weight: 600;
+    }
+    h1 {
+        color: $white;
+        max-width: 30rem;
+        margin: 7rem auto 0;
+        text-align: center;
+        font-weight: 600;
+    }
+    h4 {
+        color: transparentize($white, .1);
+        text-align: center;
+        max-width: 29rem;
+        margin: 1.8rem auto 0;
+        font-weight: 300;
+    }
+    .header-btns {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 5rem 0 0;
+    }
+    .start {
+        border: none;
+        color: $red-gradient;
+        padding: 1.2rem 1.5rem;
+        border-radius: 2.5rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .learn {
+        color: $white;
+        border: 1px solid $white;
+        border-radius: 2.5rem;
+        background: none;
+        padding: 1.2rem 2.2rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .container-editor, .gradient-phones, .container-laptop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        color: $blue-primary;
+        margin: 10rem 0 5rem;
+    }
+    h3 {
+        color: $blue-primary;
+        font-size: 2.4rem;
+        margin: 4rem auto 2rem;
+        max-width: 25rem;
+    }
+    p {
+        color: transparentize($blue-primary, .1);
+        line-height: 1.5;
+        font-size: 1.6rem;
+    }
+    .container-editor {
+        margin-bottom: 30rem;
+        .editor-text {
+            margin: 0 5rem;
+        }
+    }
+    .container-phones {
+        background: linear-gradient(0deg, rgba(63,65,100,1) 0%, rgba(44,45,63,1) 100%);
+        border-top-right-radius: 12rem;
+        border-bottom-left-radius: 12rem;
+        margin-bottom: 9rem;
+        .gradient-phones {
+            background: url("../images/bg-pattern-circles.svg") no-repeat 50% -25rem;
+            background-size: 58rem;
+            border-top-right-radius: 12rem;
+        }
+        .phones {
+            width: 37rem;
+            position: relative;
+            bottom: 20rem;
+            margin-bottom: -24rem;
+        }
+        .phones-text {
+            margin: 0 4rem 12rem;
+        }
+        h3 {
+            color: $white;
+            font-size: 3.6rem;
+            max-width: 30rem;
+            margin-bottom: 3rem;
+        }
+        p {
+            color: $white;
+        }
+    }
+    .container-laptop {
+        margin-bottom: 10rem;
+        .laptop-text {
+            margin: 0 5rem;
+        }
+    }
+}
+footer {
+    position: relative;
+    background-color: $black-blue-neutral;
+    color: $white;
+    padding: 7rem 0 10rem;
+    border-top-right-radius: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.7rem;
+    .logo {
+        margin-bottom: 7rem;
+    }
+    h5 {
+        font-size: 1.7rem;
+        margin-bottom: 3rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        gap: 1rem;
+        a {
+            color: transparentize($white, .2);
+        }
+    }
+    .attribution {
+        font-size: 11px;
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        a {
+          color: hsl(228, 45%, 44%);
+        }
+      }
+}

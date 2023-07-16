@@ -1,0 +1,260 @@
+body {
+  font-size: 1.6rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.logo {
+  width: 9rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.arrow {
+  transition: 0.2s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+header {
+  background-image: linear-gradient(0deg, rgb(255, 61, 84) 0%, rgb(255, 143, 112) 100%);
+  overflow: hidden;
+  border-bottom-left-radius: 10rem;
+}
+header .gradient-header {
+  background: url("../images/bg-pattern-intro-mobile.svg") -34rem -26rem;
+  padding-bottom: 15rem;
+}
+header .hamburger {
+  width: 3rem;
+}
+header .hamburger:hover {
+  cursor: pointer;
+}
+header .mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6rem 2rem 0;
+}
+header .mobile-menu {
+  position: absolute;
+  top: 12rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 33rem;
+  padding: 3rem 0;
+  border-radius: 5px;
+}
+header .header-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-bottom: 2rem;
+  width: 29rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+header .info-title {
+  border: none;
+  background: none;
+  font-size: 1.6rem;
+  color: hsl(208, 49%, 24%);
+  font-weight: 600;
+}
+header .info {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+header .info a {
+  color: rgba(75, 88, 98, 0.8);
+}
+header .info a:hover {
+  color: hsl(240, 10%, 16%);
+}
+header .menu-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+header .login {
+  color: hsl(208, 49%, 24%);
+  border: none;
+  background: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+}
+header .signup {
+  background: linear-gradient(270deg, rgb(255, 61, 84) 0%, rgb(255, 143, 112) 100%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  padding: 1.2rem 3.5rem;
+  border-radius: 10rem;
+  font-weight: 600;
+}
+header h1 {
+  color: hsl(0, 0%, 100%);
+  max-width: 30rem;
+  margin: 7rem auto 0;
+  text-align: center;
+  font-weight: 600;
+}
+header h4 {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  max-width: 29rem;
+  margin: 1.8rem auto 0;
+  font-weight: 300;
+}
+header .header-btns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 5rem 0 0;
+}
+header .start {
+  border: none;
+  color: hsl(353, 100%, 62%);
+  padding: 1.2rem 1.5rem;
+  border-radius: 2.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+header .learn {
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 2.5rem;
+  background: none;
+  padding: 1.2rem 2.2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .container-editor, main .gradient-phones, main .container-laptop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h2 {
+  color: hsl(208, 49%, 24%);
+  margin: 10rem 0 5rem;
+}
+main h3 {
+  color: hsl(208, 49%, 24%);
+  font-size: 2.4rem;
+  margin: 4rem auto 2rem;
+  max-width: 25rem;
+}
+main p {
+  color: rgba(31, 63, 91, 0.9);
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+main .container-editor {
+  margin-bottom: 30rem;
+}
+main .container-editor .editor-text {
+  margin: 0 5rem;
+}
+main .container-phones {
+  background: linear-gradient(0deg, rgb(63, 65, 100) 0%, rgb(44, 45, 63) 100%);
+  border-top-right-radius: 12rem;
+  border-bottom-left-radius: 12rem;
+  margin-bottom: 9rem;
+}
+main .container-phones .gradient-phones {
+  background: url("../images/bg-pattern-circles.svg") no-repeat 50% -25rem;
+  background-size: 58rem;
+  border-top-right-radius: 12rem;
+}
+main .container-phones .phones {
+  width: 37rem;
+  position: relative;
+  bottom: 20rem;
+  margin-bottom: -24rem;
+}
+main .container-phones .phones-text {
+  margin: 0 4rem 12rem;
+}
+main .container-phones h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 3.6rem;
+  max-width: 30rem;
+  margin-bottom: 3rem;
+}
+main .container-phones p {
+  color: hsl(0, 0%, 100%);
+}
+main .container-laptop {
+  margin-bottom: 10rem;
+}
+main .container-laptop .laptop-text {
+  margin: 0 5rem;
+}
+
+footer {
+  position: relative;
+  background-color: hsl(240, 10%, 16%);
+  color: hsl(0, 0%, 100%);
+  padding: 7rem 0 10rem;
+  border-top-right-radius: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.7rem;
+}
+footer .logo {
+  margin-bottom: 7rem;
+}
+footer h5 {
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  gap: 1rem;
+}
+footer .footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+}
+footer .attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
